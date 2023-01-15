@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foodtuck Landing page</title>
+  <!-- CSS -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-bs-spy="scroll" class="bg-dark">
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg d-flex align-items-center py-2 py-lg-4 navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/">
+          <span class="text-warning">Food</span>tuck
+        </a>
+
+        <!-- Toggle Open -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="ri-menu-unfold-line"></i>
+        </button>
+        <!-- /Toggle Open -->
+
+        <div class="offcanvas offcanvas-end bg-dark w-75" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header py-2">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Foodtuck
+            </h5>
+            <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#whyUs">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#chef">Chef</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#review">Review</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#blog">Blog</a>
+              </li>
+            </ul>
+            <form id="navForm" class="d-flex mt-3 mt-lg-0 rounded-pill ms-lg-5 bg-transparent" role="search">
+              <input class="form-control rounded-pill bg-transparent position-relative border border-warning text-white"
+                type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-transparent position-relative" type="submit">
+                <i
+                  class="fa-solid fa-magnifying-glass text-white position-absolute top-10 end-100 translate-middle"></i>
+                <i class="fa-solid fa-bag-shopping text-white position-absolute top-10 end-20 translate-middle"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /Navbar -->
+  </header>
+  <!-- /Header -->
+
+  <!-- Main -->
+
+  <!-- Hero -->
+  <section id="hero" class="bg-dark mt-5">
+    <div class="container">
+      <div class="row g-4 justify-content-between align-items-center">
+        <div class="col-lg-6 col-md-6 text-center text-lg-start">
+          <h1 class="h2 mt-2 text-warning">Its Quick & Amusing!</h1>
+          <h2 class="display-3 fw-bold">
+            <span class="text-warning">The </span><span class="text-white">Art of speed food Quality</span>
+          </h2>
+          <p class="mt-2 text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            dolor fuga eum ipsa incidunt, sapiente nulla.
+          </p>
+          <a href="#category" class="mt-4 btn btn-warning rounded-pill shadow py-2 px-3 text-white">See Menu</a>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="./assets/images/hero-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Hero -->
+
+  <!-- About -->
+  <section id="about" class="mt-5">
+    <div class="container">
+      <div class="row g-4 justify-content-between align-items-center">
+        <!-- ##### -->
+        <div class="col-lg-6">
+          <span class="h2 txtSubtitle text-white">About Us</span>
+          <h2 class="display-5 fw-bold mt-2 mb-4">
+            <span class="text-warning">We </span>
+            <span class="text-white">Create the best foody product</span>
+          </h2>
+          <p class="mt-3 text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            maxime amet dolores ducimus, iste temporibus. Minus?
+          </p>
+
+          <ul class="list-unstyled">
+            <li class="mb-1 d-flex gap-2 align-items-center">
+              <i class="text-white fw-bold fa-solid fa-check"></i>
+              <span class="text-white">Lacus nisi, et
+                ac dapibus sit eu velit in consequat.</span>
+            </li>
+            <li class="mb-1 d-flex gap-2 align-items-center">
+              <i class="text-white fw-bold fa-solid fa-check"></i>
+              <span class="text-white">Lacus nisi, et
+                ac dapibus sit eu velit in consequat. it eu velit</span>
+            </li>
+            <li class="mb-1 d-flex gap-2 align-items-center">
+              <i class="text-white fw-bold fa-solid fa-check"></i> <span class="text-white">Lacus nisi, et
+                ac dapibus sit eu velit in consequat.</span>
+            </li>
+          </ul>
+
+          <a href="#" class="my-3 mb-lg-0 btn btn-warning rounded-pill shadow py-2 px-3 text-white"> Read More</a>
+        </div>
+
+        <!-- ##### -->
+        <div class="col-lg-6">
+          <div class="row g-2">
+            <div class="col-12">
+              <img src="./assets/images/about-1.jpg" class="rounded img-fluid" data-fancybox="gallery" loading="lazy"
+                alt="" />
+            </div>
+            <div class="col-6">
+              <img src="./assets/images/about-2.jpg" class="rounded img-fluid" data-fancybox="gallery" loading="lazy"
+                alt="" />
+            </div>
+            <div class="col-6">
+              <img src="./assets/images/about-3.jpg" class="rounded img-fluid" data-fancybox="gallery" loading="lazy"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /About -->
+  <!-- subscribe -->
+  <div class="container">
+    <div class="row g-4 justify-content-center align-items-center">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h2 class="display-6 fw-bold mt-2 mb-4">
+          <span class="text-warning">Still </span><span class="text-white">You Need Our Support ?</span>
+        </h2>
+        <p class="text-white">
+          Don't wait make a smart & logical quote here. Its pretty easy.
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <form id="navForm" class="d-flex mt-3 mt-lg-0 rounded-pill bg-white ms-lg-5" role="search">
+          <input class="form-control rounded-pill" type="email" placeholder="Enter Your Email" aria-label="Search" />
+          <button class="btn btn-warning rounded-pill shadow" type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+    <hr class="text-warning">
+  </div>
+  <!-- ##### -->
+
+  <!-- Footer -->
+  <footer id="footer" class="mt-5">
+    <div class="mt-5">
+      <div class="container">
+        <div class="row g-4 justify-content-between">
+          <div class="col-12 col-lg-4 mb-3">
+            <h3 class="h4 fw-bold text-white">About Us</h3>
+            <p class="mt-3 text-white">
+              orporate clients and leisure travelers has been relying on
+              Groundlink for dependab safe, and professional chauffeured car
+              service in major cities across World.
+            </p>
+            <div class="mt-3 d-flex align-items-center">
+              <div class="rounded bg-warning px-4 py-4">
+                <i class="fa-solid fa-clock-rotate-left text-white w-25"></i>
+              </div>
+              <div class="d-flex flex-column  ms-5">
+                <span class="fw-semibold text-white">Opening Hours</span>
+                <small class="text-white">Mon - Sat (8.00 - 6.00)</small>
+                <small class="text-white">Sunday - Closed</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-auto">
+            <h3 class="h4 fw-bold text-white">Useful Links</h3>
+            <ul class="list-unstyled mt-3 text-white">
+              <li>
+                <a href="#" class="text-white text-decoration-none">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">News</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Partners</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Team</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Menu</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-auto">
+            <h3 class="h4 fw-bold text-white">Help?</h3>
+            <ul class="list-unstyled mt-3 text-white">
+              <li>
+                <a href="#" class="text-white text-decoration-none">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Term & Conditions</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Reporting</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Documentation</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Support Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h3 class="h4 fw-bold text-white">Recent Post</h3>
+            <!-- Recent Post Item -->
+            <div class="mt-3 d-flex align-items-center">
+              <div class="rounded-4">
+                <img src="./assets/images/recent-post-1.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column ms-3">
+                <small class="text-white">20 Feb 2022</small>
+                <span class="fw-semibold text-white">Lorem ipsum dolor sit amet, adipisicing elit.</span>
+              </div>
+            </div>
+            <!-- Recent Post Item -->
+            <div class="mt-3 d-flex align-items-center">
+              <div class="rounded">
+                <img src="./assets/images/recent-post-2.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column ms-3">
+                <small class="text-white">20 Feb 2022</small>
+                <span class="fw-semibold text-white">Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit.</span>
+              </div>
+            </div>
+            <!-- Recent Post Item -->
+            <div class="mt-3 d-flex align-items-center">
+              <div class="rounded">
+                <img src="./assets/images/recent-post-3.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column ms-3">
+                <small class="text-white">20 Feb 2022</small>
+                <span class="fw-semibold text-white">Lorem ipsum dolor sit amet, consectetur.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ##### -->
+    <div class="bg-warning mt-5">
+      <div class="container">
+        <div class="row g-4 pb-4 justify-content-between align-items-center">
+          <div class="col-lg-5 text-center text-lg-start">
+            <small class="text-white">Copyright © 2022, Foodtuck. All Rights Reserved.</small>
+          </div>
+          <div class="col-lg-5 d-flex gap-3 justify-content-center justify-content-lg-end align-items-center">
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- Script -->
+  <!-- Bootstrap -->
+  <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script> 
+</body>
+
+</html>
