@@ -7,7 +7,9 @@
   <title>Foodtuck Landing page</title>
   <!-- CSS -->
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -31,11 +33,13 @@
         </button>
         <!-- /Toggle Open -->
 
-        <div class="offcanvas offcanvas-end bg-dark w-75" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-end bg-black w-75" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header py-2">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Foodtuck
+              <a class="navbar-brand fw-bold" href="/">
+                <span class="text-warning">Food</span>tuck
+              </a>
             </h5>
             <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close">
               <i class="fa-sharp fa-solid fa-xmark"></i>
@@ -47,22 +51,22 @@
                 <a class="nav-link rounded" href="#hero">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link rounded" href="#about">About</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link rounded" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link rounded" href="#whyUs">Why Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link rounded" href="#chef">Chef</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link rounded" href="#review">Review</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link rounded" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded" href="#review">Contact</a>
               </li>
             </ul>
             <form id="navForm" class="d-flex mt-3 mt-lg-0 rounded-pill ms-lg-5 bg-transparent" role="search">
@@ -83,7 +87,6 @@
   <!-- /Header -->
 
   <!-- Main -->
-
   <!-- Hero -->
   <section id="hero" class="mt-5 pt-5 pb-5">
     <div class="container">
@@ -341,15 +344,24 @@
           <h2 class="display-5 fw-bold mt-2">
             <span class="text-warning">Fr</span><span class="text-white">om Our Menu</span>
           </h2>
-          <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-center">
-            <li class="list-group-item bg-transparent text-warning border-0 ms-5">BreakFast</li>
-            <li class="list-group-item bg-transparent text-white border-0 ms-5">Lunch</li>
-            <li class="list-group-item bg-transparent text-white border-0 ms-5">Dinner</li>
-            <li class="list-group-item bg-transparent text-white border-0 ms-5">Dessert</li>
-            <li class="list-group-item bg-transparent text-white border-0 ms-5">Drink</li>
-            <li class="list-group-item bg-transparent text-white border-0 ms-5">Snack</li>
-            <li class="list-group-item bg-transparent text-white border-0 ms-5">Suops</li>
-          </ul>
+          <div class="col-lg-12 col-md-6 col-sm-6">
+            <ul class="list-group list-group-horizontal list-unstyled d-flex justify-content-center">
+              <!-- <li class="list-group-item bg-transparent text-warning border-0 ms-5">BreakFast</li>
+              <li class="list-group-item bg-transparent text-white border-0 ms-5">Lunch</li>
+              <li class="list-group-item bg-transparent text-white border-0 ms-5">Dinner</li>
+              <li class="list-group-item bg-transparent text-white border-0 ms-5">Dessert</li>
+              <li class="list-group-item bg-transparent text-white border-0 ms-5">Drink</li>
+              <li class="list-group-item bg-transparent text-white border-0 ms-5">Snack</li>
+              <li class="list-group-item bg-transparent text-white border-0 ms-5">Suops</li> -->
+            </ul>
+            <button type="button" class="btn bg-transparent text-warning border-0">BreakFast</button>
+            <button type="button" class="btn bg-transparent text-white border-0">Lunch</button>
+            <button type="button" class="btn bg-transparent text-white border-0">Dinner</button>
+            <button type="button" class="btn bg-transparent text-white border-0">Dessert</button>
+            <button type="button" class="btn bg-transparent text-white border-0">Drink</button>
+            <button type="button" class="btn bg-transparent text-white border-0">Snack</button>
+            <button type="button" class="btn bg-transparent text-white border-0">Suops</button>
+          </div>
         </div>
       </div>
 
@@ -400,7 +412,7 @@
                 </small>
                 <span class="text-white">
                   Lacus nisi, et ac dapibus velit in consequat.</span>
-                <span class="text-warning fw-bold">12.5$       </span>
+                <span class="text-warning fw-bold">12.5$ </span>
               </div>
             </div>
             <div class="mt-3 d-flex align-items-center">
@@ -409,8 +421,8 @@
               </div>
               <div class="d-flex flex-column ms-3">
                 <small class="fw-bold text-white">Fresh Bread
-                  
-                  </small>
+
+                </small>
                 <span class="text-white"> Lacus nisi, et ac dapibus velit in consequat.</span>
                 <span class="text-warning fw-bold">14.5$ </span>
               </div>
@@ -426,7 +438,7 @@
               </div>
               <div class="d-flex flex-column ms-3">
                 <small class="fw-bold text-white">Glow Cheese</small>
-                <span class="text-white">Lacus nisi, et ac dapibus velit in consequat.                </span>
+                <span class="text-white">Lacus nisi, et ac dapibus velit in consequat. </span>
                 <span class="text-warning fw-bold">14.5$ </span>
               </div>
             </div>
@@ -436,7 +448,7 @@
               </div>
               <div class="d-flex flex-column ms-3">
                 <small class="fw-bold text-white">Italian Pizza</small>
-                <span class="text-white">Lacus nisi, et ac dapibus velit in consequat.                  .</span>
+                <span class="text-white">Lacus nisi, et ac dapibus velit in consequat. .</span>
                 <span class="text-warning fw-bold">14.5$ </span>
               </div>
             </div>
@@ -458,7 +470,7 @@
               <div class="d-flex flex-column ms-3">
                 <small class="fw-bold text-white">Mushaom Pizza</small>
                 <span class="text-white">Lacus nisi, et ac dapibus velit in consequat.
-                  </span>
+                </span>
                 <span class="text-warning fw-bold">14.5$ </span>
               </div>
             </div>
@@ -846,7 +858,9 @@
 
   <!-- Script -->
   <!-- Bootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
